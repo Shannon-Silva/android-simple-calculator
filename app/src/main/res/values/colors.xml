@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textView">#ffffff</color>
+    <color name="textViewText">#000000</color>
+    <color name="textViewText1">#1BB3F5</color>
+    <color name="buttonSymbol">#899BA2</color>
+    <color name="buttonSymbolBack">#2A3137</color>
+    <color name="tableFill">#3d4950</color>
+</resources>

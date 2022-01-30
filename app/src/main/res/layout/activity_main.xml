@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tableFill"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:weightSum="120">
+
+    <!--     Row 1 Starts From Here -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_weight="10"
+        android:background="@color/tableFill"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_span="4"
+            android:background="@color/textView"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="right"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textColor="@color/textViewText"
+            android:textSize="40dp"
+            android:typeface="sans" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_span="4"
+            android:background="@color/textView"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="right"
+            android:inputType="number"
+            android:textColor="@color/textViewText1"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </TableRow>
+
+    <!--     Row 2 Starts From Here -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:background="@color/tableFill"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/clear"
+            android:textColor="@color/textViewText1"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/brac1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="( "
+            android:textColor="@color/textViewText1"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/brac2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text=")"
+            android:textColor="@color/textViewText1"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/divide"
+            android:textColor="@color/textViewText1"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+    </TableRow>
+
+
+    <!--     Row 3 Starts From Here -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/seven"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/eight"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/nine"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+
+        <Button
+            android:id="@+id/multi"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/multiply"
+            android:textColor="@color/textViewText1"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+    </TableRow>
+
+
+    <!--     Row 4 Starts From Here -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/four"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/five"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/six"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/add"
+            android:textColor="@color/textViewText1"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+
+    </TableRow>
+
+
+    <!--     Row 5 Starts From Here -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/one"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/two"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/three"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/subs"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/substract"
+            android:textColor="@color/textViewText1"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+
+    </TableRow>
+
+
+    <!--     Row 6 Starts From Here -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:id="@+id/deci"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/decimal"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:text="@string/zero"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_span="1"
+            android:background="@color/buttonSymbolBack"
+            android:fontFamily="sans-serif"
+            android:text="DEL"
+            android:textColor="@color/buttonSymbol"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_span="1"
+            android:background="@color/textViewText1"
+            android:text="@string/equal"
+            android:textColor="@color/textView"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+
+    </TableRow>
+
+
+</TableLayout>
